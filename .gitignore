@@ -1,0 +1,21 @@
+# Personal notes (local only)
+notes/
+my_notes.txt
+scratch/
+*.todo
+*.pdf
+__pycache__
+*key*
+python_certification/*.py
+javascript_certification/*.js
+javascript_certification/fundamentals_review/invent.js
+javascript_certification/mutations_algorithm/
+javascript_certification/quiz_game/v1_quizGame.js
+javascript_certification/recipe_tracker/v1_recipeTracker.js
+javascript_certification/record_collection/recordCollection.js
+python_certification/graphs_and_trees/shortest_path_algorithm.py
+python_certification/hashtable/v1_hashtable.py
+python_certification/searching/binary_search.py
+python_certification/sorting/merge_sort.py
+responsive_web_design_cert/
+
