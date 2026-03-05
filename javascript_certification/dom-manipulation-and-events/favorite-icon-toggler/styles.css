@@ -1,0 +1,70 @@
+/* Reset some default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Center the app on the page */
+body {
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+main {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+/* Title (optional if you add one later) */
+main h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Item list */
+.item-list {
+  list-style: none;
+}
+
+/* Each item */
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
+}
+
+/* Remove border on last item */
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+/* Favorite button */
+.favorite-icon {
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect */
+.favorite-icon:hover {
+  transform: scale(1.2);
+}
+
+/* When icon is filled */
+.filled {
+  color: crimson;
+}
