@@ -1,0 +1,82 @@
+/* 
+  Reset default browser styles for consistency across browsers
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  CSS variables for consistent color usage across the project
+*/
+:root {
+  --dark-grey: #0a0a23;
+  --white: #ffffff;
+  --yellow: #f1be32;
+}
+
+/* 
+  Base body styling
+*/
+body {
+  background-color: var(--dark-grey);
+  color: var(--white);
+}
+
+/* 
+  Main heading styling
+*/
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* 
+  Styling for the category dropdown filter
+*/
+.select-container {
+  display: block;
+  margin: 25px auto;
+  padding: 8px;
+  border: 4px solid var(--white);
+  border-radius: 4px;
+  width: 200px;
+}
+
+/* 
+  Product card container layout
+  Default: vertical stacking for smaller screens
+*/
+.products-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* 
+  Responsive layout:
+  Switch to horizontal card layout on larger screens
+*/
+@media (min-width: 760px) {
+  .products-container {
+    flex-direction: row;
+  }
+}
+
+/* 
+  Individual product card styling
+*/
+.card {
+  background-color: var(--white);
+  color: var(--dark-grey);
+  border: 4px solid var(--yellow);
+  border-radius: 5px;
+  padding: 10px;
+  width: 200px;
+}
