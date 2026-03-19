@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Descriptive title helps screen reader users understand page purpose -->
+    <title>Accessible Controls</title>
+  </head>
+  <body>
+
+    <!-- Proper heading structure improves navigation for assistive technologies -->
+    <h1>Audio Controls</h1>
+
+    <!-- Button element is inherently accessible (keyboard + screen readers) -->
+    <button type="button">
+      <!-- Clear, visible label ensures usability -->
+      Play
+    </button>
+
+    <div>
+      <!-- Label text for the volume control -->
+      <span id="volume-label">Volume</span>
+
+      <!-- Additional description provides more context for assistive technologies -->
+      <span id="volume-description">Adjust the sound level</span>
+
+      <!-- 
+        Range input is keyboard accessible by default.
+        aria-labelledby connects both label and description to the control,
+        ensuring screen readers announce meaningful context.
+      -->
+      <input 
+        type="range" 
+        min="0" 
+        max="100" 
+        value="50"
+        aria-labelledby="volume-label volume-description"
+      >
+    </div>
+
+    <!-- Another semantic button, accessible by default -->
+    <button type="button">
+      Mute
+    </button>    
+
+  </body>
+</html>
