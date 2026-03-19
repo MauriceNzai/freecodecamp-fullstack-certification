@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Defines character encoding for proper text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Provides a meaningful title for screen readers and browser tabs -->
+  <title>Tech Conference 2025 Schedule</title>
+</head>
+<body>
+
+  <!-- Main heading: helps screen reader users understand page structure -->
+  <h1>Tech Conference 2025 Schedule</h1>
+
+  <!-- Table used for structured data (NOT layout) -->
+  <table>
+
+    <!-- Caption provides a summary of the table's purpose for screen readers -->
+    <caption>Schedule by Track and Time</caption>
+
+    <thead>
+      <tr>
+        <!-- scope="col" associates headers with their respective columns -->
+        <th scope="col">Time</th>
+        <th scope="col">Track A</th>
+        <th scope="col">Track B</th>
+        <th scope="col">Track C</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <!-- scope="row" associates this header with all cells in the row -->
+        <th scope="row">9:00 AM</th>
+        <td>Keynote: Tech Future</td>
+        <td>Intro to Web Dev</td>
+        <td>UX for All</td>
+      </tr>
+
+      <tr>
+        <th scope="row">10:00 AM</th>
+        <td>Accessibility Deep Dive</td>
+        <td>CSS for Beginners</td>
+        <td>Inclusive Design Principles</td>
+      </tr>
+
+      <tr>
+        <th scope="row">11:00 AM</th>
+
+        <!-- colspan groups cells for a shared event (Break)
+             Screen readers will announce this spans all tracks -->
+        <td colspan="3">Break</td>
+      </tr>
+
+      <tr>
+        <th scope="row">11:30 AM</th>
+        <td>AR/VR in Education</td>
+        <td>JavaScript Fundamentals</td>
+        <td>Design Systems at Scale</td>
+      </tr>
+
+      <tr>
+        <th scope="row">12:30 PM</th>
+
+        <!-- Another merged cell for clarity and reduced repetition -->
+        <td colspan="3">Lunch Break</td>
+      </tr>
+
+      <tr>
+        <th scope="row">2:00 PM</th>
+        <td>Voice UI Workshop</td>
+        <td>Git & GitHub Essentials</td>
+        <td>Color & Contrast in UI</td>
+      </tr>      
+    </tbody>
+  </table>
+
+</body>
+</html>
