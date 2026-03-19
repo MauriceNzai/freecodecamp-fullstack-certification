@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Accessibility: Defines the language of the page for screen readers -->
+<head>
+  <meta charset="UTF-8"> <!-- Accessibility: Ensures proper text encoding for assistive technologies -->
+  <title>Camperbot's Blog</title> <!-- Accessibility: Provides a meaningful page title for screen readers and browser tabs -->
+</head>
+<body>
+  <!-- Accessibility: Main heading (h1) gives users a clear starting point and page structure -->
+  <h1>Welcome to Camperbot's Blog</h1>
+
+  <!-- Accessibility: <nav> identifies a navigation region for screen readers -->
+  <nav>
+    <h2>Navigation</h2> <!-- Accessibility: Section heading improves navigation for assistive tech -->
+    
+    <!-- Accessibility: List structure helps screen readers announce number of items -->
+    <ul>
+      <!-- Accessibility: Anchor links allow keyboard users to jump directly to sections -->
+      <li><a href="#post1">My Journey</a></li>
+      <li><a href="#post2">Accessibility</a></li>
+      <li><a href="#post3">Next Steps</a></li>
+    </ul>
+  </nav>
+
+  <!-- Accessibility: <main> identifies the primary content of the page -->
+  <main>
+
+    <!-- Accessibility: Each <article> represents a standalone piece of content -->
+    <article>
+      <!-- Accessibility: ID allows skip navigation via anchor links -->
+      <h2 id="post1">My Journey Learning to Code</h2>
+      
+      <!-- Accessibility: Paragraph text is simple and readable -->
+      <p>I started learning to code a few months ago and it's been a wild ride!</p>
+      
+      <!-- Accessibility: Proper heading hierarchy (h3 under h2) improves structure -->
+      <h3>Early Challenges</h3>
+      <p>At first, syntax was really confusing.</p>
+      
+      <h3>Breakthroughs</h3>
+      <p>Eventually things started to click.</p>
+    </article>
+
+    <article>
+      <h2 id="post2">Accessibility Matters</h2>
+      <p>Today I learned that not everyone uses the web the same way I do.</p>
+
+      <h3>Screen Readers</h3>
+      <p>These tools help visually impaired users browse websites.</p>
+    </article>
+
+    <article>
+      <h2 id="post3">What's Next?</h2>
+      <p>I'm excited to dive into JavaScript and build interactive features!</p>
+
+      <h3>Coming soon: My first JavaScript project!</h3>
+      <p>Stay tuned for some exciting interactive blog features.</p>
+    </article>
+
+  </main>
+
+  <!-- Accessibility: <footer> defines a landmark region for additional info -->
+  <footer>
+    <h2>Contact Me</h2>
+
+    <!-- Accessibility: Mailto link allows direct interaction for users -->
+    <!-- Consider adding aria-label if email purpose needs more context -->
+    <p>Email me at <a href="mailto:camperbot@blog.io">camperbot@blog.io</a></p>
+  </footer>
+</body>
+</html>
