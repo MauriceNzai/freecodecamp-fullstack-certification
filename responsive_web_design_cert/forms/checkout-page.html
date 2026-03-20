@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+    <h1>Checkout</h1>
+
+    <!-- Section for cart items -->
+    <section>
+        <h2>Your Cart</h2>
+        <!-- Image has descriptive alt text for screen readers -->
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="A multi-colored cube for the cube game">
+        <!-- Item description linked with ID for potential aria-describedby references -->
+        <p id="item-description">A multi-colored cube</p>
+        <!-- Price clearly displayed and can be programmatically associated with the item if needed -->
+        <p>$12</p>
+    </section>
+
+    <!-- Section for payment information -->
+    <section>
+        <h2>Payment Information</h2>
+        <form>
+            <!-- Card holder name input -->
+            <label for="card-name">
+                Card Holder Name
+                <!-- Asterisk visually indicates required field but hidden from assistive tech -->
+                <span aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="card-name" name="card-name" required aria-required="true">
+
+            <!-- Card number input with descriptive help text -->
+            <label for="card-number">
+                Card Number
+                <span aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="card-number" name="card-number" aria-describedby="card-number-help" required aria-required="true">
+            <!-- Help text linked via aria-describedby to provide guidance to screen readers -->
+            <p id="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+
+            <!-- Expiry date input -->
+            <label for="card-expiry-date">
+                Expiry Date
+                <span aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="card-expiry-date" name="card-expiry-date" placeholder="MM/YY" required aria-required="true">
+
+            <!-- CVV input -->
+            <label for="cvv">
+                CVV
+                <span aria-hidden="true">*</span>
+            </label>
+            <input type="text" id="cvv" name="cvv" required aria-required="true">
+
+            <!-- Action button -->
+            <!-- Type button could be changed to type submit if form submission is intended -->
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+</body>
+
+</html>
