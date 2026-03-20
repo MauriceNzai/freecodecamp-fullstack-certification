@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Donation Form</title>
+</head>
+<body>
+  <!-- Main heading clearly describes the purpose of the page for screen readers -->
+  <h1>Donation Form</h1>
+
+  <!-- The form element groups all inputs together; accessibility tools can detect it as a form region -->
+  <form>
+    
+    <!-- 
+      Label associated with input via 'for' attribute, which improves accessibility.
+      Screen readers will read the label when the input receives focus.
+      'required' attribute informs users that this field must be filled.
+    -->
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <!-- Email input uses type="email" for built-in validation and better mobile keyboard support -->
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Number input uses type="number" for proper input control and accessibility -->
+    <label for="amount">Donation Amount ($):</label>
+    <input type="number" id="amount" name="amount" required>
+
+    <!-- Checkbox input paired with label for easier selection and screen reader support -->
+    <input type="checkbox" id="newsletter" name="newsletter">
+    <label for="newsletter">Subscribe</label>
+
+    <!-- Submit button is clearly labeled, making its function obvious for all users -->
+    <input type="submit" value="Send">
+  </form>
+</body>
+</html>
