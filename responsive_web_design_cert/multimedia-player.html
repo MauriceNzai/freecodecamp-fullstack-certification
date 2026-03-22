@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Defines character encoding for proper text rendering -->
+  <meta charset="UTF-8">
+
+  <!-- Ensures responsive behavior across devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Provides a meaningful page title for screen readers and browser tabs -->
+  <title>Multimedia Player</title>
+</head>
+
+<body>
+  <!-- Main heading helps screen reader users understand page structure -->
+  <h1>Multimedia Player</h1>
+
+  <!-- Section groups related audio content -->
+  <section>
+    <!-- Descriptive heading for context -->
+    <h2>Now Playing: Sailing Away</h2>
+
+    <!-- 
+      controls: Enables keyboard-accessible playback controls
+      aria-label: Provides a clear description for screen readers
+    -->
+    <audio controls aria-label="Audio player for the song Sailing Away">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+
+      <!-- Fallback text for browsers that do not support audio -->
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Section groups video content -->
+  <section>
+    <!-- Fixed typo ("dos" → "does") and improved clarity -->
+    <h2>What is the map method and how does it work?</h2>
+
+    <!-- 
+      controls: Enables accessible playback
+      width: Provides consistent layout
+      aria-label: Describes video purpose for assistive technologies
+    -->
+    <video controls width="600" aria-label="Video explaining the JavaScript map method">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.mp4" type="video/mp4">
+
+      <!-- 
+        track element provides captions:
+        kind="captions": Essential for deaf or hard-of-hearing users
+        srclang="en": Specifies language
+        label="English": User-friendly label
+        default: Ensures captions are enabled by default
+      -->
+      <track 
+        src="https://cdn.freecodecamp.org/curriculum/labs/what-is-the-map-method-and-how-does-it-work.vtt" 
+        kind="captions" 
+        srclang="en" 
+        label="English"
+        default>
+
+      <!-- Fallback text -->
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Section provides transcript for additional accessibility -->
+  <section>
+    <h2>Transcript</h2>
+
+    <!-- 
+      Transcript improves accessibility for:
+      - Screen reader users
+      - Users who prefer reading over listening
+      - Situations where media cannot be played
+    -->
+    <p>
+      What is the map method and how does it work? The map method is a powerful and widely used function in JavaScript that operates on arrays. It's designed to create a new array by applying a given function to each element of the original array. This method does not modify the original array, but instead returns the new array containing the results of the function applied to each element.
+    </p>
+  </section>
+</body>
+</html>
