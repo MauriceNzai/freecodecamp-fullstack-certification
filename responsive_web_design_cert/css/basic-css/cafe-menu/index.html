@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding for proper text rendering -->
+    <meta charset="utf-8" />
+
+    <!-- Ensures responsiveness on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Page title displayed in browser tab -->
+    <title>Cafe Menu</title>
+
+    <!-- External CSS stylesheet -->
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- Main container for the menu -->
+    <div class="menu">
+      <main>
+        <!-- Main heading -->
+        <h1>CAMPER CAFE</h1>
+
+        <!-- Establishment year -->
+        <p class="established">Est. 2020</p>
+
+        <hr>
+
+        <!-- Coffee section -->
+        <section>
+          <h2>Coffee</h2>
+
+          <!-- Improved alt text for accessibility -->
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" 
+               alt="A cup of freshly brewed coffee"/>
+
+          <!-- Menu item -->
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">$3.00</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">$3.75</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">$3.50</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">$4.00</p>
+          </article>
+
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">$4.50</p>
+          </article>
+        </section>
+
+        <!-- Desserts section -->
+        <section>
+          <h2>Desserts</h2>
+
+          <!-- Improved alt text -->
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" 
+               alt="A slice of pie dessert"/>
+
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">$1.50</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">$2.75</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">$3.00</p>
+          </article>
+
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">$2.50</p>
+          </article>
+        </section>
+      </main>
+
+      <hr class="bottom-line">
+
+      <!-- Footer section -->
+      <footer>
+        <address>
+          <p>
+            <!-- Security improvement for external links -->
+            <a href="https://www.freecodecamp.org" 
+               target="_blank" 
+               rel="noopener noreferrer">
+               Visit our website
+            </a>
+          </p>
+
+          <!-- Physical address -->
+          <p class="address">123 Free Code Camp Drive</p>
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>
