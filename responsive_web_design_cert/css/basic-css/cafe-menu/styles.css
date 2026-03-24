@@ -1,0 +1,119 @@
+/* Page background and global font */
+body {
+  background-image: url("https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg");
+  font-family: Arial, sans-serif; /* Added fallback font */
+  padding: 20px;
+}
+
+/* Main heading styles */
+h1 {
+  font-size: 40px;
+  margin: 0 0 15px; /* Shorthand for cleaner code */
+}
+
+/* Section headings */
+h2 {
+  font-size: 30px;
+}
+
+/* Italic styling for establishment text */
+.established {
+  font-style: italic;
+}
+
+/* Center align headings and paragraphs */
+h1, h2, p {
+  text-align: center;
+}
+
+/* Menu container */
+.menu {
+  width: 80%;
+  max-width: 500px; /* Prevents overly wide layout */
+  background-color: burlywood;
+
+  /* Centering horizontally */
+  margin: 0 auto;
+
+  padding: 20px;
+}
+
+/* Center images */
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -25px; /* Slight overlap effect (use cautiously) */
+}
+
+/* Divider line styling */
+hr {
+  height: 2px;
+  background-color: brown;
+  border: none; /* Cleaner than border-color */
+}
+
+/* Bottom spacing for final divider */
+.bottom-line {
+  margin-top: 25px;
+}
+
+/* Custom font styling for headings */
+h1, h2 {
+  font-family: Impact, serif;
+}
+
+/* Menu item layout */
+.item p {
+  display: inline-block; /* Aligns name and price horizontally */
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Item name styling */
+.flavor, .dessert {
+  text-align: left;
+  width: 75%;
+}
+
+/* Price alignment */
+.price {
+  text-align: right;
+  width: 25%;
+}
+
+/* FOOTER */
+
+/* Smaller font size for footer */
+footer {
+  font-size: 14px;
+}
+
+/* Remove default italic from address */
+address {
+  font-style: normal;
+}
+
+/* Address spacing */
+.address {
+  margin-bottom: 5px;
+}
+
+/* Link styling */
+a {
+  color: black;
+}
+
+/* Keep visited links consistent */
+a:visited {
+  color: black;
+}
+
+/* Hover effect */
+a:hover {
+  color: brown;
+}
+
+/* Active state */
+a:active {
+  color: brown;
+}
