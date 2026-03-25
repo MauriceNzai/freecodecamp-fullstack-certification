@@ -1,0 +1,80 @@
+body {
+  background-color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.todo-list {
+  list-style: none;
+  background-color: white;
+  border-radius:10px;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.todo-list > li {
+  background-color: rgb(225, 240, 247);
+  border-radius: 20px;
+  padding: 15px;
+  margin: 25px;
+  min-height: 80px;
+}
+
+
+.todo-list > li > label {
+  margin-left: 8px;
+}
+
+.todo-list > li:hover {
+  background-color: rgb(210, 230, 240);
+  transition: 0.3s;
+}
+
+.sub-item {
+  list-style-type: square;
+  margin: 10px;
+ 
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  color: gray;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(226, 144, 112, 0.984);
+}
+
+a:link {
+  color: #ff8c00;
+}
+
+a:visited {
+  color: #cc7000;
+}
+
+a:hover {
+  color: #ff4500;
+}
+
+a:focus {
+  outline: 2px solid darkblue;
+  outline-offset: 2px;
+}
+
+a:active {
+  color: green;
+}	
