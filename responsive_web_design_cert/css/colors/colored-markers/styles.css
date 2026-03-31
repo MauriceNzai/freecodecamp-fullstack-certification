@@ -1,0 +1,60 @@
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+} 
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 15px 0;
+  border-radius: 10px;
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.marker:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+
+.cap {
+  width: 60px;
+  border-radius: 5px 0 0 5px;
+}
+
+.sleeve {
+  width: 110px;
+  border-radius: 0 5px 5px 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap, .sleeve {
+  height: 25px;
+  display: inline-block;
+}
+
+.red {
+  background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+  background: linear-gradient(#55680D, #71F53E, #116C31);
+  box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.blue {
+  background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
