@@ -1,0 +1,50 @@
+body {
+  background-color: #f4f4f4;
+  width: 80%;
+  margin: auto;
+}
+
+.color-grid {
+  width: 80%;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.color-box {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  padding: 20px;
+  margin: 10px;
+  align-content: space-between;
+  border-radius: 5px;
+}
+
+.color1 {
+  background-color: #239ff6;
+}
+
+.color2 {
+  background-color: rgb(123, 213, 255);
+}
+
+.color3 {
+  background-color: orange;
+}
+
+.color4 {
+  background-color: hsl(287, 75%, 45%);
+}
+
+.color5 {
+  background-color: #dce2e7;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
