@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 50px 10px;
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  background-color: gray;
+  margin: 0 auto;
+}
+
+header, main, footer {
+  margin: 0 auto;
+  width: 80%;
+  background-color: white;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+header, footer{
+  text-align: center; 
+}
+
+main {
+  display: flex;
+  justify-content: space-around; /* This creates even gaps around the sections */
+  align-items: flex-start;      /* Keeps sections aligned at the top */
+  flex-wrap: wrap;              /* Ensures they stack on small screens/mobile */
+}
+
+section {
+  flex: 1;          /* Allows sections to grow and share space equally */
+  max-width: 30%;   /* Prevents them from getting too wide/stretching weirdly */
+  min-width: 200px; /* Forces a wrap if the screen gets too thin */
+  padding: 10px;
+}
+
+img {
+  display: block;
+  margin: 25px auto;
+  max-width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+h1, h2, p {
+  margin: 0;
+}
+
+hr {
+  width: 90%;
+  border: 2px solid gray;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 20px;
+} 
