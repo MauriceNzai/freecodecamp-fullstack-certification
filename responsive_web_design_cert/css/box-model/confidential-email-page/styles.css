@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#email {
+  background: rgb(247, 230, 230);
+  /*box-sizing: border-box;*/
+  padding: 50px;
+  position: relative;
+  margin-top: 50px;
+  width: 80%;
+  min-height: 80%;
+  max-width: 500px;
+  border: 2px solid gray;
+}
+
+#confidential, #top-secret {
+  width: 40%;
+  color: red;
+  display: inline-block;
+  padding: 10px;
+  margin-left: 20px;
+  border: 2px solid red;
+  position: absolute;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold
+}
+
+#confidential {
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%) rotate(-10deg);
+}
+
+#top-secret {
+  bottom: 20px;
+  right: 50%;
+  transform: translateX(50%) rotate(10deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+.blurred:hover {
+  filter: none;
+}
