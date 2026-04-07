@@ -1,0 +1,133 @@
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  display: block;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing-container {
+  width: 80%;
+  max-width: 900px;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-content: center;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pricing-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.pricing-card:hover {
+  transform: translateY(-30px);
+}
+
+.pricing-card h2 {
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  
+}
+
+.pricing-card p {
+  /*text-decoration: underline;*/
+  display: inline;
+  font-weight: 550;
+  font-size: 1.5rem;
+  color: #3e3e3e;
+  border-bottom: 1px solid #433d28;
+  text-align: center;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.features li {
+  padding: 6px 0;
+  line-height: 1.4;
+  font-size: 0.95rem;
+}
+
+.check {
+  color: #219c54;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.cross {
+  color: crimson;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 15px;
+  background: #f1be32;
+  color: #000;
+  font-weight: bold;
+  border: 3px solid #eebe3a;
+  padding: 5px;
+  transition:background 0.3s;
+}
+
+a:hover {
+  background: #ffd84d;
+  transform: translateY(-2px);
+}
+
+.basic-plan {
+  order: 0;
+  background: rgb(226, 233, 219);
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+  background: rgb(191, 230, 243);
+  border: 3px solid #219c54;
+  transform: scale(1.05);
+}
+
+.badge {
+  background: #219c54;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.premium-plan {
+  order: 2;
+  background: rgb(226, 233, 219);
+}
